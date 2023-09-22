@@ -24,6 +24,7 @@ const widgetConfig: WidgetConfig = {
   },
   hiddenUI: ['appearance'],
   variant: 'expandable',
+  subvariant: 'split',
 };
 
 export const Widget = () => {
