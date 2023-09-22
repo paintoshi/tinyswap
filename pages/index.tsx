@@ -46,9 +46,11 @@ const Home: NextPage = () => {
       <main className={`${styles.main} ${manrope.className}`}>
         <div className={styles.center}>
           <h1 className={styles.title}>TinySwap</h1>
-          <p className={styles.sub}>
+          <p className={styles.titleSub}>
             Tiny, but Powerful Crypto Swap <br />
-            Hosted & Maintained by <a href="https://github.com/paintoshi/tinyswap" target="_blank" rel="noopener noreferrer">Paintoshi</a>
+          </p>
+          <p className={styles.sub}>
+            Open Source by <a href="https://github.com/paintoshi/tinyswap" target="_blank" rel="noopener noreferrer">Paintoshi</a>
           </p>
           <LiFiWidgetNext />
         </div>
