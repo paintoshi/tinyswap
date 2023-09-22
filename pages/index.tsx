@@ -48,7 +48,7 @@ const Home: NextPage = () => {
           <h1 className={styles.title}>TinySwap</h1>
           <p className={styles.sub}>
             Tiny, but Powerful & Zero fees added <br />
-            Hosted & Maintained by <a href="https://github.com/paintoshi/tinyswap">Paintoshi</a>
+            Hosted & Maintained by <a href="https://github.com/paintoshi/tinyswap" target="_blank" rel="noopener noreferrer">Paintoshi</a>
           </p>
           <LiFiWidgetNext />
         </div>
