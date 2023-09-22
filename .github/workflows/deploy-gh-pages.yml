@@ -3,6 +3,8 @@ name: Deploy to GH Pages
 on:
   push:
     branches: [ main ]
+permissions:
+    contents: write
 
 jobs:
   build:
@@ -29,5 +31,3 @@ jobs:
         with:
             branch: gh-pages
             folder: out
-        env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
