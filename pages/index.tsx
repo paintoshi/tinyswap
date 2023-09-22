@@ -50,7 +50,7 @@ const Home: NextPage = () => {
             Tiny, but Powerful Crypto Swap <br />
           </p>
           <p className={styles.sub}>
-            Open Source by <a href="https://github.com/paintoshi/tinyswap" target="_blank" rel="noopener noreferrer">Paintoshi</a>
+            No added fees - <a href="https://github.com/paintoshi/tinyswap" target="_blank" rel="noopener noreferrer">Open Source</a>
           </p>
           <LiFiWidgetNext />
         </div>
