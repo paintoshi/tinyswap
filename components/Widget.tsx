@@ -23,6 +23,7 @@ const widgetConfig: WidgetConfig = {
     },
   },
   hiddenUI: ['appearance'],
+  variant: 'expandable',
 };
 
 export const Widget = () => {
