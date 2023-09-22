@@ -13,6 +13,14 @@ const widgetConfig: WidgetConfig = {
     palette: {
       primary: { main: '#3437ba' },
       secondary: { main: '#348fba' },
+      background: { 
+        paper: '#141434', // bg color for cards
+        default: '#0a0a18', // bg color container
+      },
+      grey: {
+        300: '#000000', // border light theme
+        800: '#2b2b63', // border dark theme
+      },
     },
     shape: {
       borderRadius: 16,
