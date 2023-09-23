@@ -13,6 +13,10 @@ TinySwap is a simple github pages hosted serverless next.js container applicatio
 
 ## Development
 
+Prerequisites:
+
+* Node 18
+
 Run development server:
 
 ```bash
@@ -28,3 +32,7 @@ yarn start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Forking
+
+Change the GA4 tag in index.tsx if you want google analytics.
