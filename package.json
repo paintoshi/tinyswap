@@ -1,7 +1,13 @@
 {
-  "name": "tiny",
+  "name": "tinyswap",
+  "description": "A very simple but powerful DeFi Swap interface, powered by LI.FI.",
   "version": "0.1.0",
+  "author": "Paintoshi",
+  "license": "MIT",
   "private": true,
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
