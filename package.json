@@ -1,6 +1,6 @@
 {
   "name": "tinyswap",
-  "description": "A very simple but powerful DeFi Swap interface, powered by LI.FI.",
+  "description": "A simple and powerful Cross-chain Swap/Bridge, powered by LI.FI.",
   "version": "0.1.0",
   "author": "Paintoshi",
   "license": "MIT",

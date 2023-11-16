@@ -22,24 +22,24 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>TinySwap</title>
-        <meta name="description" content="A very simple but powerful DeFi Swap interface, powered by LI.FI." />
+        <meta name="description" content="A simple and powerful Cross-chain Swap/Bridge, powered by LI.FI." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
 
         <meta name="keywords" content="defi, swap, crypto, lifi, li.fi, exchange, metamask" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="TinySwap - The Simplest Crypto Swap Ever!" />
+        <meta name="twitter:title" content="TinySwap - The Simplest Crypto Swap/Bridge Ever!" />
         <meta name="twitter:image" content="https://tinyswap.app/og.png" />
         <meta name="twitter:domain" content="tinyswap.app" />
         <meta name="twitter:site" content="@paintoshi" />
         <meta name="twitter:creator" content="@paintoshi" />
         <meta
           name="twitter:description"
-          content="A very simple but powerful DeFi Swap interface, powered by LI.FI."
+          content="A simple and powerful Cross-chain Swap/Bridge, powered by LI.FI."
         />
 
-        <meta property="og:title" content="TinySwap - The Simplest Crypto Swap Ever!" />
-        <meta property="og:description" content="A very simple but powerful DeFi Swap interface, powered by LI.FI." />
+        <meta property="og:title" content="TinySwap - The Simplest Crypto Swap/Bridge Ever!" />
+        <meta property="og:description" content="A simple and powerful Cross-chain Swap/Bridge, powered by LI.FI." />
         <meta property="og:image" content="https://tinyswap.app/og.png" />
         <meta property="og:url" content="https://tinyswap.app" />
       </Head>
