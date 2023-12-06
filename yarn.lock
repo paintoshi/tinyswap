@@ -711,10 +711,10 @@
     events "^3.3.0"
     react "^18.2.0"
 
-"@lifi/widget@^2.9.2":
-  version "2.9.2"
-  resolved "https://registry.yarnpkg.com/@lifi/widget/-/widget-2.9.2.tgz#0ec7b17b000299b190a668fc0aa117f364ae68fc"
-  integrity sha512-wz5mVnzRlJ6r6TOlzwPM4CGJjZlo0wMlg+zVTgGykxnXyfmy+PAANZLPXiZRa96QakhjL48zkanwaWlqjTiq4g==
+"@lifi/widget@^2.9.4":
+  version "2.9.4"
+  resolved "https://registry.yarnpkg.com/@lifi/widget/-/widget-2.9.4.tgz#1dcc8205b3d212ca9c898dace8bc2b030889ca25"
+  integrity sha512-DPaYN9XEUom5+fiDISZlvfJMJ2WYoUuJFqDHD7JivYAZ/BZ37MU24N/CJwH42jJdaJbzbAnBczu1uMNq0pmXQw==
   dependencies:
     "@emotion/react" "^11.11.1"
     "@emotion/styled" "^11.11.0"
