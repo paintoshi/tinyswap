@@ -46,14 +46,9 @@ const Home: NextPage = () => {
       <main className={`${styles.main} ${manrope.className}`}>
         <div className={styles.center}>
           <h1 className={styles.title}>TinySwap</h1>
-          <p className={styles.titleSub}>
-            Tiny, but Powerful Crypto Swap <br />
-          </p>
-          <p className={styles.sub}>
-            No added fees - <a href="https://github.com/paintoshi/tinyswap" target="_blank" rel="noopener noreferrer">Open Source</a>
-          </p>
           <LiFiWidgetNext />
         </div>
+        <a className={styles.githubLink} href="https://github.com/paintoshi/tinyswap" target="_blank" rel="noopener noreferrer"><img src="/github.svg" className={styles.githubImage} alt="Github" /></a>
       </main>
       {/* Global Site Tag (gtag.js) - Google Analytics */}
       <Script
