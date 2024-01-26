@@ -8,6 +8,7 @@ const widgetConfig: WidgetConfig = {
     borderRadius: '16px',
   },
   integrator: 'TinySwap',
+  fee: 0.001,
   appearance: 'dark',
   theme: {
     palette: {
