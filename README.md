@@ -7,9 +7,7 @@ TinySwap is a simple github pages hosted serverless next.js container applicatio
 
 ### Live at https://tinyswap.app
 
-![Screenshot](https://github.com/paintoshi/tinyswap/blob/main/public/screen1.png?raw=true)
-
-![Screenshot](https://github.com/paintoshi/tinyswap/blob/main/public/screen2.png?raw=true)
+![image](https://github.com/paintoshi/tinyswap/assets/88572775/a168dee7-fcf9-4a64-9dfd-1d85ebe3e9c4)
 
 ## Development
 
