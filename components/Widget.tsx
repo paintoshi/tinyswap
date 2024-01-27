@@ -7,7 +7,7 @@ const widgetConfig: WidgetConfig = {
     boxShadow: '0px 0px 101px 0px rgb(36 5 255 / 28%)',
     borderRadius: '16px',
   },
-  integrator: 'TinySwap',
+  integrator: 'tinyswap',
   fee: 0.001,
   appearance: 'dark',
   theme: {
