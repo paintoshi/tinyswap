@@ -43,7 +43,7 @@ const widgetConfig: WidgetConfig = {
         decimals: 18,
         chainId: 250,
         name: 'FTM',
-        logoURI: 'https://assets.spooky.fi/tokens/FTM.png',
+        logoURI: 'https://github.com/paintoshi/tinyswap/blob/main/public/FTM.png?raw=true',
       },
       {
         address: '0x2F733095B80A04b38b0D10cC884524a3d09b836a',
@@ -52,7 +52,7 @@ const widgetConfig: WidgetConfig = {
         chainId: 250,
         name: 'Wormhole: USDC.e Token',
         logoURI:
-          'https://cdn.jsdelivr.net/gh/unified-defi/equalizer-tokens@main/fantom/tokens/128x128/0x2f733095b80a04b38b0d10cc884524a3d09b836a.png',
+          'https://github.com/paintoshi/tinyswap/blob/main/public/USDCe.png?raw=true',
       },
     ],
   },
