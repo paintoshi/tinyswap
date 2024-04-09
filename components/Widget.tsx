@@ -34,6 +34,28 @@ const widgetConfig: WidgetConfig = {
   hiddenUI: ['appearance'],
   variant: 'expandable',
   subvariant: 'split',
+  tokens: {
+    // Featured tokens will appear on top of the list
+    featured: [
+      {
+        address: '0x0000000000000000000000000000000000000000',
+        symbol: 'FTM',
+        decimals: 18,
+        chainId: 250,
+        name: 'FTM',
+        logoURI: 'https://assets.spooky.fi/tokens/FTM.png',
+      },
+      {
+        address: '0x2F733095B80A04b38b0D10cC884524a3d09b836a',
+        symbol: 'USDC.e',
+        decimals: 6,
+        chainId: 250,
+        name: 'Wormhole: USDC.e Token',
+        logoURI:
+          'https://cdn.jsdelivr.net/gh/unified-defi/equalizer-tokens@main/fantom/tokens/128x128/0x2f733095b80a04b38b0d10cc884524a3d09b836a.png',
+      },
+    ],
+  },
 };
 
 export const Widget = () => {

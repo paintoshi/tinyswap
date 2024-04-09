@@ -765,10 +765,10 @@
     events "^3.3.0"
     react "^18.2.0"
 
-"@lifi/widget@^2.10.0":
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/@lifi/widget/-/widget-2.10.0.tgz#9e6a4cc17663eded0e87dc5d3b2d4b84edae68fc"
-  integrity sha512-XarWsthAKlAyJxoJV63CP+hKbv3zq16oJisdqGxUilsCJGAcmWNlNakoFs74ubgL03sS9wWeCMpO/lLLtO0TAA==
+"@lifi/widget@^2.10.1":
+  version "2.10.1"
+  resolved "https://registry.yarnpkg.com/@lifi/widget/-/widget-2.10.1.tgz#c41a13197bf658f931095e8c5f2a35de2911b4d7"
+  integrity sha512-Tn/pq7/fh9aAHnnwuPYYznJ6IN+/5oUKP1qlCc/0iB3lJfeTq23ybkmNEqF90JrGGRkX6zvhs73Cl3vBJskg0w==
   dependencies:
     "@emotion/react" "^11.11.1"
     "@emotion/styled" "^11.11.0"
