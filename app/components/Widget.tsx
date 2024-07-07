@@ -1,12 +1,10 @@
-import { LiFiWidget, WidgetConfig } from '@lifi/widget'
-import styles from '@/styles/Home.module.css'
+'use client';
 
-const widgetConfig: WidgetConfig = {
-  containerStyle: {
-    border: '2px solid #0054bd70',
-    boxShadow: '0px 0px 101px 0px rgb(36 5 255 / 28%)',
-    borderRadius: '16px',
-  },
+import { LiFiWidget, WidgetConfig, WidgetSkeleton } from '@lifi/widget'
+import styles from '@/app/page.module.css'
+import { ClientOnly } from '@/app/components/ClientOnly'
+
+const widgetConfig = {
   integrator: 'tinyswap',
   fee: 0.001,
   appearance: 'dark',
@@ -30,9 +28,14 @@ const widgetConfig: WidgetConfig = {
     typography: {
       fontFamily: 'Manrope, sans-serif',
     },
+    container: {
+      border: '2px solid #0054bd70',
+      boxShadow: '0px 0px 101px 0px rgb(36 5 255 / 28%)',
+      borderRadius: '16px',
+    },
   },
-  hiddenUI: ['appearance'],
-  variant: 'expandable',
+  hiddenUI: ['appearance', 'drawerCloseButton'],
+  variant: 'wide',
   subvariant: 'split',
   tokens: {
     // Featured tokens will appear on top of the list
@@ -56,12 +59,14 @@ const widgetConfig: WidgetConfig = {
       },
     ],
   },
-};
+} as Partial<WidgetConfig>;
 
 export const Widget = () => {
   return (
     <div className={styles.widget}>
-      <LiFiWidget integrator="TinySwap" config={widgetConfig} />
+      <ClientOnly fallback={<WidgetSkeleton config={widgetConfig} />}>
+        <LiFiWidget integrator="TinySwap" config={widgetConfig} />
+      </ClientOnly>
     </div>
   );
 };
