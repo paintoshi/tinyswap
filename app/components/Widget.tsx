@@ -1,6 +1,6 @@
 'use client';
 
-import { LiFiWidget, WidgetConfig, WidgetSkeleton } from '@lifi/widget'
+import { LiFiWidget, WidgetConfig, WidgetSkeleton, ChainId } from '@lifi/widget'
 import styles from '@/app/page.module.css'
 import { ClientOnly } from '@/app/components/ClientOnly'
 
@@ -33,6 +33,13 @@ const widgetConfig = {
       boxShadow: '0px 0px 101px 0px rgb(36 5 255 / 28%)',
       borderRadius: '16px',
     },
+    /** Not needed for now
+    sdkConfig: {
+      rpcUrls: {
+        [ChainId.FTM]: ['https://rpcapi.fantom.network/'],
+      },
+    },
+    */
   },
   hiddenUI: ['appearance', 'drawerCloseButton'],
   variant: 'wide',
