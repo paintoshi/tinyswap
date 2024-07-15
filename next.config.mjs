@@ -7,12 +7,18 @@
 */
 
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
   swcMinify: true,
-  transpilePackages: ['@lifi/widget', '@lifi/wallet-management'],
+  // transpilePackages: ['@lifi/widget', '@lifi/wallet-management'],
   output: 'export',
+  webpack: (config) => {
+    config.resolve.fallback = { fs: false, net: false, tls: false };
+    config.externals.push('pino-pretty', 'lokijs', 'encoding');
+    // config.externals.push('pino-pretty');
+    return config;
+  },
   // assetPrefix: assetPrefix,
   // basePath: basePath
 };
 
-module.exports = nextConfig;
+export default nextConfig;
