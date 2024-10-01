@@ -1,6 +1,6 @@
 'use client';
 
-import { LiFiWidget, WidgetConfig, WidgetSkeleton, ChainId } from '@lifi/widget'
+import { LiFiWidget, WidgetConfig, WidgetSkeleton } from '@lifi/widget'
 import styles from '@/app/page.module.css'
 import { ClientOnly } from '@/app/components/ClientOnly'
 

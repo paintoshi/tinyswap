@@ -1,10 +1,10 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
+  --font-manrope: var(--font-manrope), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
-
   --foreground-rgb: 250, 250, 250;
   --background-start-rgb: 0, 0, 10;
   --background-end-rgb: 0, 0, 37;
@@ -44,12 +44,21 @@ a {
   color: #25a4d7;
   text-decoration: none;
   cursor: pointer;
+}
 
-  &:hover {
-    color: #277cbd;
-  }
+a:hover {
+  color: #277cbd;
 }
 
 html {
   color-scheme: dark;
+}
+
+/* Add these new styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-orbitron);
+}
+
+code, pre {
+  font-family: var(--font-mono);
 }

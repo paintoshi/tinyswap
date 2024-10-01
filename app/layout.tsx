@@ -1,9 +1,18 @@
 import type { Metadata, Viewport } from "next"
-import { Manrope } from "next/font/google"
+import { Manrope, Orbitron } from "next/font/google"
 import "./globals.css"
 import Script from "next/script"
 
-const manrope = Manrope({ subsets: ['latin'] })
+const manrope = Manrope({ 
+  subsets: ['latin'],
+  variable: '--font-manrope',
+})
+
+const orbitron = Orbitron({ 
+  weight: '700',
+  subsets: ['latin'],
+  variable: '--font-orbitron',
+})
 
 export const metadata: Metadata = {
   title: "TinySwap",
@@ -27,7 +36,7 @@ export const metadata: Metadata = {
     images: "https://tinyswap.app/og.png",
     url: "https://tinyswap.app",
   },
-  icons: [{ rel: "icon", url: "/favicon.ico" }]
+  icons: [{ rel: "icon", url: "/favicon.ico" }],
 }
 
 export const viewport: Viewport = {
@@ -42,7 +51,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={manrope.className}>
+      <body className={`${manrope.variable} ${orbitron.variable}`}>
         {children}
         {/* Global Site Tag (gtag.js) - Google Analytics */}
         <Script
