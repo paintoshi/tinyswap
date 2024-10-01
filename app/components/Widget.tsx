@@ -44,6 +44,8 @@ const widgetConfig = {
   hiddenUI: ['appearance', 'drawerCloseButton'],
   variant: 'wide',
   subvariant: 'split',
+  slippage: 0.01, // Default is 0.005
+
   tokens: {
     // Featured tokens will appear on top of the list
     featured: [
