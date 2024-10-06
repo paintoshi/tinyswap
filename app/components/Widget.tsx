@@ -6,7 +6,7 @@ import { ClientOnly } from '@/app/components/ClientOnly'
 
 const widgetConfig = {
   integrator: 'tinyswap',
-  fee: 0.001,
+  fee: 0.005,
   appearance: 'dark',
   theme: {
     palette: {
@@ -41,7 +41,7 @@ const widgetConfig = {
     },
     */
   },
-  hiddenUI: ['appearance', 'drawerCloseButton'],
+  hiddenUI: ['appearance', 'drawerCloseButton', 'integratorStepDetails'],
   variant: 'wide',
   subvariant: 'split',
   slippage: 0.01, // Default is 0.005
