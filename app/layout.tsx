@@ -16,9 +16,9 @@ const orbitron = Orbitron({
 
 export const metadata: Metadata = {
   title: "TinySwap",
-  description: "A simple and powerful Cross-chain Swap/Bridge, powered by LI.FI.",
+  description: "A simple and powerful cross-chain swap / bridge, powered by LI.FI",
   applicationName: "TinySwap",
-  keywords: ["tinyswap", "swap", "bridge", "li.fi", "crypto", "cryptocurrency", "exchange"],
+  keywords: ["dex", "swap", "bridge", "li.fi", "lifi", "crypto", "cryptocurrency", "exchange", "fantom", "sonic", "ftm", "$S", "polygon", "avalanche", "arbitrum", "matic", "avax", "eth", "arb"],
   authors: [{ name: "Paintoshi", url: "https://github.com/paintoshi" }],
   creator: "Paintoshi",
   publisher: "Paintoshi",
