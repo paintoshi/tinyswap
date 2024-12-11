@@ -15,10 +15,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@lifi/widget": "^3.6.2",
+    "@lifi/widget": "^3.12.3",
     "next": "14.2.4",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "viem": "^2.21.54",
+    "wagmi": "^2.13.5"
   },
   "devDependencies": {
     "@types/node": "^20",
