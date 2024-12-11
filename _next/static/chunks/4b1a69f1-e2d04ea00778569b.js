@@ -1,5 +1,5 @@
 "use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[252],{50798:function(e,t,n){var a,r,i,l;/**
- * @remix-run/router v1.19.2
+ * @remix-run/router v1.21.0
  *
  * Copyright (c) Remix Software Inc.
  *
