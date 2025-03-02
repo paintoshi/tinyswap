@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import { Widget } from "@/app/components/Widget";
+import WidgetContainer from "@/app/components/WidgetContainer";
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
         <p className={styles.description}>
           Simple and powerful Cross-chain Swap/Bridge
         </p>
-        <Widget />
+        <WidgetContainer />
       </div>
       <div className={styles.logo}>
         <h1 className={styles.title}>TinySwap</h1>

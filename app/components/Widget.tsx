@@ -1,37 +1,37 @@
-'use client'
+'use client';
 
-import { LiFiWidget, WidgetConfig, WidgetSkeleton } from '@lifi/widget'
-import styles from '@/app/page.module.css'
-import { ClientOnly } from '@/app/components/ClientOnly'
-import { useEffect, useState } from 'react'
+import { LiFiWidget, WidgetConfig, WidgetSkeleton } from '@lifi/widget';
+import styles from '@/app/page.module.css';
+import { ClientOnly } from '@/app/components/ClientOnly';
+import { useEffect, useState } from 'react';
 
-export const Widget = () => {
+export const Widget = ({ fee }: { fee: number | undefined }) => {
   const useIsMobile = () => {
-    const [isMobile, setIsMobile] = useState(true)
+    const [isMobile, setIsMobile] = useState(true);
     
     useEffect(() => {
       const checkIfMobile = () => {
-        setIsMobile(window.innerWidth < 701)
-      }
+        setIsMobile(window.innerWidth < 701);
+      };
       
       // Initial check
-      checkIfMobile()
+      checkIfMobile();
       
       // Add event listener for window resize
-      window.addEventListener('resize', checkIfMobile)
+      window.addEventListener('resize', checkIfMobile);
       
       // Cleanup
-      return () => window.removeEventListener('resize', checkIfMobile)
-    }, [])
+      return () => window.removeEventListener('resize', checkIfMobile);
+    }, []);
     
-    return isMobile
-  }
+    return isMobile;
+  };
   
-  const isMobile = useIsMobile()
+  const isMobile = useIsMobile();
   
   const widgetConfig = {
     integrator: 'tinyswap',
-    fee: 0.005,
+    fee: fee,
     appearance: 'dark',
     theme: {
       palette: {
