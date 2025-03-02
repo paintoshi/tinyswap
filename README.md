@@ -3,8 +3,6 @@
 Making swapping cryptocurrency easier than ever, no more no less.<br>
 Supporting many chains, exchanges, bridges and coins for both swapping and bridging crosschain.
 
-TinySwap is a simple github pages hosted serverless next.js container application for the https://li.fi/widget/
-
 ### Live at https://tinyswap.app
 
 ![image](https://github.com/paintoshi/tinyswap/assets/88572775/a168dee7-fcf9-4a64-9dfd-1d85ebe3e9c4)
