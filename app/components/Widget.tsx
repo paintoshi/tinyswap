@@ -41,7 +41,7 @@ const widgetConfig = {
     },
     */
   },
-  hiddenUI: ['appearance', 'drawerCloseButton', 'integratorStepDetails'],
+  hiddenUI: ['appearance', 'drawerCloseButton', 'integratorStepDetails', 'poweredBy'],
   variant: 'wide',
   subvariant: 'split',
   slippage: 0.01, // Default is 0.005
