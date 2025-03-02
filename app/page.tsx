@@ -5,6 +5,7 @@ import { Widget } from "@/app/components/Widget";
 export default function Home() {
   return (
     <main className={styles.main}>
+      <div className={styles.navbar} />
       <div className={styles.center}>
         <p className={styles.description}>
           Simple and powerful Cross-chain Swap/Bridge
