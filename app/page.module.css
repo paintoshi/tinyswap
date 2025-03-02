@@ -104,6 +104,7 @@
 @media (max-width: 700px) {
   .widget {
     height: calc(100dvh - 42px);
+    width: 100%;
   }
 
   .main {
@@ -112,6 +113,7 @@
 
   .center {
     padding: 0.5rem 0 0;
+    width: 100%;
   }
 
   .center::before {
