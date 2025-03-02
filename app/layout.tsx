@@ -22,6 +22,13 @@ export const metadata: Metadata = {
   authors: [{ name: "Paintoshi", url: "https://github.com/paintoshi" }],
   creator: "Paintoshi",
   publisher: "Paintoshi",
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    minimumScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+  },
   twitter: {
     card: "summary_large_image",
     title: "TinySwap",

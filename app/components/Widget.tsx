@@ -56,16 +56,14 @@ export const Widget = ({ fee }: { fee: number | undefined }) => {
       container: {
         border: isMobile ? 'none' : '2px solid #0054bd70',
         boxShadow: '0px 0px 101px 0px rgb(36 5 255 / 28%)',
+        // boxShadow: isMobile ? 'none' : '0px 0px 101px 0px rgb(36 5 255 / 28%)',
         borderRadius: isMobile ? 'none' : '16px',
-        borderBottomLeftRadius: '16px',
-        borderBottomRightRadius: '16px',
         display: isMobile ? 'flex' : 'block',
         height: isMobile ? '100%' : 'unset',
       },
       header: {
         position: isMobile ? 'fixed' : 'unset',
         top: isMobile ? 42 : 'unset', /** Matched with the navbar height */
-        borderRadius: isMobile ? 16 : 'unset',
       },
       /** Not needed for now
       sdkConfig: {

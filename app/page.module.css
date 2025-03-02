@@ -53,6 +53,10 @@
   height: 32px;
 }
 
+.widget {
+  height: unset;
+}
+
 /* Top navbar to block the widget when scrolling */
 .navbar {
   position: fixed;
@@ -98,12 +102,16 @@
 
 /* Mobile */
 @media (max-width: 700px) {
+  .widget {
+    height: calc(100dvh - 42px);
+  }
+
   .main {
     padding: 34px 0 0 0;
   }
 
   .center {
-    padding: 0.5rem 0 1rem;
+    padding: 0.5rem 0 0;
   }
 
   .center::before {

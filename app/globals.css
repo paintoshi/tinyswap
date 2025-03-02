@@ -40,6 +40,15 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* Mobile (if wanting no background) */
+/**
+@media (max-width: 700px) {
+  body {
+    background: #0a0a18;
+  }
+}
+*/
+
 a {
   color: #25a4d7;
   text-decoration: none;
@@ -61,4 +70,9 @@ h1, h2, h3, h4, h5, h6 {
 
 code, pre {
   font-family: var(--font-mono);
+}
+
+/* Special fix for the lifi widget chain selector on mobile */
+.full-page-container > div {
+  top: 106px;
 }
