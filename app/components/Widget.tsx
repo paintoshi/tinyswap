@@ -87,7 +87,7 @@ export const Widget = ({ fee }: { fee: number | undefined }) => {
           decimals: 18,
           chainId: 146,
           name: 'Sonic',
-          logoURI: 'https://github.com/paintoshi/tinyswap/blob/main/public/FTM.png?raw=true',
+          logoURI: 'https://github.com/paintoshi/tinyswap/blob/main/public/sonic.png?raw=true',
         },
       ],
     },
