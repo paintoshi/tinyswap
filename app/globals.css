@@ -26,6 +26,7 @@
 
 html,
 body {
+  height: 100dvh;
   max-width: 100vw;
   overflow-x: hidden;
 }
@@ -74,5 +75,14 @@ code, pre {
 
 /* Special fix for the lifi widget chain selector on mobile */
 .full-page-container > div {
-  top: 106px;
+  top: 0;
+}
+
+@media (max-width: 700px) {
+  body {
+    overflow-y: hidden;
+  }
+  .full-page-container > div {
+    top: 106px;
+  }
 }

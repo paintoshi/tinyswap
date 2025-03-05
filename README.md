@@ -32,3 +32,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Forking
 
 Change the GA4 tag in index.tsx if you want google analytics.
+
+## Contact
+
+https://x.com/paintoshi
