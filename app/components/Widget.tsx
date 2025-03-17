@@ -31,7 +31,7 @@ export const Widget = ({ fee }: { fee: number | undefined }) => {
   
   const widgetConfig = {
     integrator: 'tinyswap',
-    fee: fee,
+    // fee: fee,
     appearance: 'dark',
     theme: {
       palette: {
