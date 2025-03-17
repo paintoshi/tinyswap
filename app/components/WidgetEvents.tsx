@@ -2,7 +2,8 @@ import type { ChainTokenSelected } from '@lifi/widget';
 import { useWidgetEvents, WidgetEvent } from '@lifi/widget';
 import { useEffect, useState } from 'react';
 
-export const defaultFee = 0.005;
+// export const defaultFee = 0.001; // 0.1%
+export const defaultFee = 0;
 const S = '0x0000000000000000000000000000000000000000';
 const wS = '0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38';
 
