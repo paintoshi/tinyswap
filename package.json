@@ -15,15 +15,16 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@bigmi/react": "^0.1.0",
-    "@lifi/widget": "^3.17.1",
-    "@solana/wallet-adapter-react": "0.15.35",
-    "@tanstack/react-query": "5.66.3",
+    "@bigmi/react": "^0.4.1",
+    "@lifi/widget": "^3.24.3",
+    "@mysten/dapp-kit": "^0.16.14",
+    "@solana/wallet-adapter-react": "^0.15.39",
+    "@tanstack/react-query": "^5.81.5",
     "next": "14.2.4",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "viem": "2.23.2",
-    "wagmi": "2.14.11"
+    "viem": "^2.31.7",
+    "wagmi": "^2.15.6"
   },
   "devDependencies": {
     "@types/node": "^20",
