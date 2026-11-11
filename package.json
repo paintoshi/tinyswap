@@ -6,32 +6,45 @@
   "license": "MIT",
   "private": true,
   "engines": {
-    "node": "20.x"
+    "node": "24.x"
   },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "dependencies": {
-    "@bigmi/react": "^0.4.1",
-    "@lifi/widget": "^3.24.3",
-    "@mysten/dapp-kit": "^0.16.14",
-    "@solana/wallet-adapter-react": "^0.15.39",
-    "@tanstack/react-query": "^5.81.5",
-    "next": "14.2.4",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "viem": "^2.31.7",
-    "wagmi": "^2.15.6"
+    "@base-org/account": "^2.5.1",
+    "@bigmi/react": "^0.9.5",
+    "@coinbase/wallet-sdk": "^4.3.6",
+    "@lifi/widget": "^4.10.3",
+    "@lifi/widget-provider-bitcoin": "^4.3.5",
+    "@lifi/widget-provider-ethereum": "^4.1.10",
+    "@lifi/widget-provider-solana": "^4.1.10",
+    "@lifi/widget-provider-sui": "^4.1.10",
+    "@metamask/connect-evm": "^2.1.0",
+    "@mysten/dapp-kit-react": "^2.1.45",
+    "@mysten/sui": "^2.39.1",
+    "@safe-global/safe-apps-provider": "~0.18.6",
+    "@safe-global/safe-apps-sdk": "^9.1.0",
+    "@tanstack/query-core": "^5.107.1",
+    "@tanstack/react-query": "^5.107.1",
+    "@wagmi/core": "^3.6.9",
+    "@walletconnect/ethereum-provider": "^2.21.1",
+    "bs58": "^6.0.0",
+    "next": "16.4.6",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "viem": "^2.57.18",
+    "wagmi": "^3.7.11"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "18.3.1",
-    "@types/react-dom": "^18.3.0",
-    "eslint": "^9.6.0",
-    "eslint-config-next": "14.2.4",
-    "typescript": "^5.5.3"
+    "@types/node": "^24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "16.4.6",
+    "typescript": "^5.9.3"
   }
 }

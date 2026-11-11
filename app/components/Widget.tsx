@@ -1,9 +1,20 @@
 'use client';
 
 import { LiFiWidget, WidgetConfig, WidgetSkeleton } from '@lifi/widget';
+import { BitcoinProvider } from '@lifi/widget-provider-bitcoin';
+import { EthereumProvider } from '@lifi/widget-provider-ethereum';
+import { SolanaProvider } from '@lifi/widget-provider-solana';
+import { SuiProvider } from '@lifi/widget-provider-sui';
 import styles from '@/app/page.module.css';
 import { ClientOnly } from '@/app/components/ClientOnly';
 import { useEffect, useState } from 'react';
+
+const walletProviders = [
+  EthereumProvider(),
+  SolanaProvider(),
+  BitcoinProvider(),
+  SuiProvider(),
+];
 
 export const Widget = ({ fee }: { fee: number | undefined }) => {
   const useIsMobile = () => {
@@ -31,19 +42,29 @@ export const Widget = ({ fee }: { fee: number | undefined }) => {
   
   const widgetConfig = {
     integrator: 'tinyswap',
+    // feeConfig: {
     // fee: fee,
+    // name: "DApp fee",
+    // showFeePercentage: false,
+    // showFeeTooltip: false
+    // },
     appearance: 'dark',
+    providers: walletProviders,
     theme: {
-      palette: {
-        primary: { main: '#3437ba' },
-        secondary: { main: '#348fba' },
-        background: { 
-          paper: '#141434', // bg color for cards
-          default: '#0a0a18', // bg color container
-        },
-        grey: {
-          300: '#000000', // border light theme
-          800: '#2b2b63', // border dark theme
+      colorSchemes: {
+        dark: {
+          palette: {
+            primary: { main: '#3437ba' },
+            secondary: { main: '#348fba' },
+            background: {
+              paper: '#141434', // bg color for cards
+              default: '#0a0a18', // bg color container
+            },
+            grey: {
+              300: '#000000', // border light theme
+              800: '#2b2b63', // border dark theme
+            },
+          },
         },
       },
       shape: {
@@ -73,9 +94,14 @@ export const Widget = ({ fee }: { fee: number | undefined }) => {
       },
       */
     },
-    hiddenUI: ['appearance', 'drawerCloseButton', 'integratorStepDetails', 'poweredBy'],
-    variant: isMobile ? 'compact' : 'wide',
-    subvariant: 'split',
+    hiddenUI: {
+      appearance: true,
+      drawerCloseButton: true,
+      integratorStepDetails: true,
+      poweredBy: true,
+    },
+    variant: 'compact',
+    mode: 'default',
     slippage: 0.01, // Default is 0.005
   
     tokens: {
@@ -91,7 +117,7 @@ export const Widget = ({ fee }: { fee: number | undefined }) => {
         },
       ],
     },
-  } as Partial<WidgetConfig>;
+  } satisfies WidgetConfig;
   
   return (
     <div className={styles.widget}>

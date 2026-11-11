@@ -56,7 +56,10 @@ export const WidgetEvents = ({ setFee }: { setFee: (fee: number | undefined) => 
     widgetEvents.on(WidgetEvent.SourceChainTokenSelected, handleSourceChainTokenSelected);
     widgetEvents.on(WidgetEvent.DestinationChainTokenSelected, handleDestinationChainTokenSelected);
     
-    return () => widgetEvents.all.clear();
+    return () => {
+      widgetEvents.off(WidgetEvent.SourceChainTokenSelected, handleSourceChainTokenSelected);
+      widgetEvents.off(WidgetEvent.DestinationChainTokenSelected, handleDestinationChainTokenSelected);
+    };
   }, [widgetEvents]);
 
   // Update fee whenever source or destination token changes
