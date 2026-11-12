@@ -1,12 +1,13 @@
 'use client';
 
-import { LiFiWidget, WidgetConfig, WidgetSkeleton } from '@lifi/widget';
+import { LiFiWidget, WidgetConfig } from '@lifi/widget';
 import { BitcoinProvider } from '@lifi/widget-provider-bitcoin';
 import { EthereumProvider } from '@lifi/widget-provider-ethereum';
 import { SolanaProvider } from '@lifi/widget-provider-solana';
 import { SuiProvider } from '@lifi/widget-provider-sui';
 import styles from '@/app/page.module.css';
 import { ClientOnly } from '@/app/components/ClientOnly';
+import { LoadingIndicator } from '@/app/components/LoadingIndicator';
 import { useEffect, useState } from 'react';
 
 const walletProviders = [
@@ -121,7 +122,7 @@ export const Widget = ({ fee }: { fee: number | undefined }) => {
   
   return (
     <div className={styles.widget}>
-      <ClientOnly fallback={<WidgetSkeleton config={widgetConfig} />}>
+      <ClientOnly fallback={<LoadingIndicator />}>
         <LiFiWidget integrator="TinySwap" config={widgetConfig} />
       </ClientOnly>
     </div>
